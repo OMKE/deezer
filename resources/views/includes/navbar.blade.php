@@ -1,5 +1,5 @@
 <header class="header">
-    <img src="img/logo.png" alt="Deezer logo" class="logo">
+    <a href="/"><img src="img/logo.png" alt="Deezer logo" class="logo"></a>
     <nav class="navigation">
         <ul class="navigation__list">
             <li class="navigation__item"><a href="/download" class="navigation__link">Download</a></li>

@@ -1,0 +1,48 @@
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px 60px;        
+        border-radius: 100px;
+        transition: all .2s;
+        
+        font-size: 1.2rem;
+        transform-origin: center;
+    }
+
+    &__primary {
+        
+        &--red {
+            background-color: var(--color-red);
+            color: #fff;
+            font-weight: 600;
+            border: none;
+        }
+    }
+
+    &__secondary {
+
+
+        &--dark {
+            font-weight: 600;
+            padding: 13px 38px;
+            background-color: #fff;
+            color: var(--color-grey-dark);
+            border: 2px solid var(--color-grey-dark);
+
+        }
+
+    }
+
+    
+
+
+
+    
+    
+
+
+}

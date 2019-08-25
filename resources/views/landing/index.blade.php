@@ -3,55 +3,70 @@
 @section('content')
 
     <section class="section-intro">
-        <h1 class="heading-primary">You bring the passion. <br>We bring the music.</h1>
-        <h2 class="heading-secondary">
-            <span class="heading-secondary--red">Try Deezer Premium free for 30 days*</span>
-        </h2>
-        <a href="/premium" class="btn btn__primary--red">Deezer Premium</a>
-        <a href="/register" class="btn btn__secondary--dark">Deezer Free</a>
+        <div class="u-margin-left-big">
+            <h1 class="heading-primary section-intro__title">You bring the passion. <br>We bring the music.</h1>
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--red">Try Deezer Premium free for 30 days*</span>
+            </h2>
+            <a href="/premium" class="btn btn__primary--red u-margin-top-medium u-margin-right-small">Deezer Premium</a>
+            <a href="/register" class="btn btn__secondary--dark">Deezer Free</a>
+        </div>
+        
     </section>
 
     <section class="section-features">
-        <h1 class="heading-primary--2">Why Deezer?</h1>
-        <div class="features-container">
-            <div class="feature">
-                <div class="feature__icon">
-                    <svg class="svg-icon svg-icon-check" height="48" viewBox="0 0 12 12" width="48"><g><path d="M0.832881674,5.33272695 C0.643058472,5.1431487 0.33466167,5.1432264 0.144400319,5.33324223 C-0.0471874986,5.52458282 -0.0460920282,5.8311039 0.143884374,6.02083515 L3.93388547,9.80594552 L4.27838412,10.1499996 L11.8562966,2.58186587 C12.0506465,2.38776679 12.0476158,2.08271707 11.8573544,1.89270123 C11.6657666,1.70136065 11.3581449,1.70315838 11.1672993,1.89375767 L4.27838412,8.77378322 L0.832881674,5.33272695 Z"></path></g></svg>
+        <h1 class="heading-primary">Why Deezer?</h1>
+        <div class="features-wrapper-flex">
+            <div class="features-container">
+                <div class="feature">
+                    <div class="feature__icon">
+                        <svg class="svg-icon svg-icon-check" height="48" viewBox="0 0 12 12" width="48"><g><path d="M0.832881674,5.33272695 C0.643058472,5.1431487 0.33466167,5.1432264 0.144400319,5.33324223 C-0.0471874986,5.52458282 -0.0460920282,5.8311039 0.143884374,6.02083515 L3.93388547,9.80594552 L4.27838412,10.1499996 L11.8562966,2.58186587 C12.0506465,2.38776679 12.0476158,2.08271707 11.8573544,1.89270123 C11.6657666,1.70136065 11.3581449,1.70315838 11.1672993,1.89375767 L4.27838412,8.77378322 L0.832881674,5.33272695 Z"></path></g></svg>
+                    </div>
+                    <div>
+                    <h2 class="feature__heading">
+                        A world of music in your pocket.
+                    </h2>
+                    <p class="feature__desc">Find new loves and old favourites from over 56 million tracks.</p>
+                    </div>
                 </div>
-                <h2 class="feature__heading">
-                    A world of music in your pocket.
-                </h2>
-                <p class="feature__desc">Find new loves and old favourites from over 56 million tracks.</p>
-            </div>
-            <div class="feature">
-                <div class="feature__icon">
-                    <svg class="svg-icon svg-icon-check" height="48" viewBox="0 0 12 12" width="48"><g><path d="M0.832881674,5.33272695 C0.643058472,5.1431487 0.33466167,5.1432264 0.144400319,5.33324223 C-0.0471874986,5.52458282 -0.0460920282,5.8311039 0.143884374,6.02083515 L3.93388547,9.80594552 L4.27838412,10.1499996 L11.8562966,2.58186587 C12.0506465,2.38776679 12.0476158,2.08271707 11.8573544,1.89270123 C11.6657666,1.70136065 11.3581449,1.70315838 11.1672993,1.89375767 L4.27838412,8.77378322 L0.832881674,5.33272695 Z"></path></g></svg>
+                <div class="feature ">
+                    <div class="feature__icon">
+                        <svg class="svg-icon svg-icon-check" height="48" viewBox="0 0 12 12" width="48"><g><path d="M0.832881674,5.33272695 C0.643058472,5.1431487 0.33466167,5.1432264 0.144400319,5.33324223 C-0.0471874986,5.52458282 -0.0460920282,5.8311039 0.143884374,6.02083515 L3.93388547,9.80594552 L4.27838412,10.1499996 L11.8562966,2.58186587 C12.0506465,2.38776679 12.0476158,2.08271707 11.8573544,1.89270123 C11.6657666,1.70136065 11.3581449,1.70315838 11.1672993,1.89375767 L4.27838412,8.77378322 L0.832881674,5.33272695 Z"></path></g></svg>
+                    </div>
+                    <div>
+                    <h2 class="feature__heading">
+                        No WiFi? No problem.
+                    </h2>
+                    <p class="feature__desc">With Deezer Premium, you don't need to be connected to enjoy your favoure tracks.</p>
+                    </div>
                 </div>
-                <h2 class="feature__heading">
-                    No WiFi? No problem.
-                </h2>
-                <p class="feature__desc">With Deezer Premium, you don't need to be connected to enjoy your favoure tracks.</p>
-            </div>
-            <div class="feature">
-                <div class="feature__icon">
-                    <svg class="svg-icon svg-icon-check" height="48" viewBox="0 0 12 12" width="48"><g><path d="M0.832881674,5.33272695 C0.643058472,5.1431487 0.33466167,5.1432264 0.144400319,5.33324223 C-0.0471874986,5.52458282 -0.0460920282,5.8311039 0.143884374,6.02083515 L3.93388547,9.80594552 L4.27838412,10.1499996 L11.8562966,2.58186587 C12.0506465,2.38776679 12.0476158,2.08271707 11.8573544,1.89270123 C11.6657666,1.70136065 11.3581449,1.70315838 11.1672993,1.89375767 L4.27838412,8.77378322 L0.832881674,5.33272695 Z"></path></g></svg>
+                <div class="feature">
+                    <div class="feature__icon">
+                        <svg class="svg-icon svg-icon-check" height="48" viewBox="0 0 12 12" width="48"><g><path d="M0.832881674,5.33272695 C0.643058472,5.1431487 0.33466167,5.1432264 0.144400319,5.33324223 C-0.0471874986,5.52458282 -0.0460920282,5.8311039 0.143884374,6.02083515 L3.93388547,9.80594552 L4.27838412,10.1499996 L11.8562966,2.58186587 C12.0506465,2.38776679 12.0476158,2.08271707 11.8573544,1.89270123 C11.6657666,1.70136065 11.3581449,1.70315838 11.1672993,1.89375767 L4.27838412,8.77378322 L0.832881674,5.33272695 Z"></path></g></svg>
+                    </div>
+                    <div>
+                    <h2 class="feature__heading">
+                        A world of music in your pocket.
+                    </h2>
+                    <p class="feature__desc">Create playlists from millions of tracks and take them with wherever you go.</p>
+                    </div>
                 </div>
-                <h2 class="feature__heading">
-                    A world of music in your pocket.
-                </h2>
-                <p class="feature__desc">Create playlists from millions of tracks and take them with wherever you go.</p>
-            </div>
-            <div class="feature">
-                <div class="feature__icon">
-                    <svg class="svg-icon svg-icon-check" height="48" viewBox="0 0 12 12" width="48"><g><path d="M0.832881674,5.33272695 C0.643058472,5.1431487 0.33466167,5.1432264 0.144400319,5.33324223 C-0.0471874986,5.52458282 -0.0460920282,5.8311039 0.143884374,6.02083515 L3.93388547,9.80594552 L4.27838412,10.1499996 L11.8562966,2.58186587 C12.0506465,2.38776679 12.0476158,2.08271707 11.8573544,1.89270123 C11.6657666,1.70136065 11.3581449,1.70315838 11.1672993,1.89375767 L4.27838412,8.77378322 L0.832881674,5.33272695 Z"></path></g></svg>
+                <div class="feature">
+                    <div class="feature__icon">
+                        <svg class="svg-icon svg-icon-check" height="48" viewBox="0 0 12 12" width="48"><g><path d="M0.832881674,5.33272695 C0.643058472,5.1431487 0.33466167,5.1432264 0.144400319,5.33324223 C-0.0471874986,5.52458282 -0.0460920282,5.8311039 0.143884374,6.02083515 L3.93388547,9.80594552 L4.27838412,10.1499996 L11.8562966,2.58186587 C12.0506465,2.38776679 12.0476158,2.08271707 11.8573544,1.89270123 C11.6657666,1.70136065 11.3581449,1.70315838 11.1672993,1.89375767 L4.27838412,8.77378322 L0.832881674,5.33272695 Z"></path></g></svg>
+                    </div>
+                    <div>
+                    <h2 class="feature__heading">
+                        Made for you.
+                    </h2>
+                    <p class="feature__desc">Flow gets to know what you like and what you don't. <br>Discover your personal soundtrack.</p>
+                    </div>
                 </div>
-                <h2 class="feature__heading">
-                    Made for you.
-                </h2>
-                <p class="feature__desc">Flow gets to know what you like and what you don't. <br>Discover your personal soundtrack.</p>
+                
             </div>
+            <img src="img/iphone.png" alt="iPhone Pic" srcset="" class="iphone-mockup">
         </div>
-        <img src="img/iphone.png" alt="iPhone Pic" srcset="">
+        
     </section>
 
     <section class="mobility">

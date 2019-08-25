@@ -3,9 +3,11 @@
 :root {
     --color-red: #ED5668;
     --color-blue: #3497C6;
+    --color-blue-dark: #0D6188;
     --color-orange: #FCA93D;
-    --color-grey-light: #F0F0F0;
+    --color-grey-light: #F9F9F9;
     --color-grey-dark: #32323D;
+
 }
 
 
@@ -19,7 +21,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem = 10px  - 10px/16px(browser default) = 62.5%;
 
 
     @include break(tab-land){
@@ -43,4 +45,5 @@ html {
 
 body {
     box-sizing: border-box;
+    color: var(--color-grey-dark);
 }
