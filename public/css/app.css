@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap);/*
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap);/*
 
 0 - 600px -> Phone
 600-900px -> Portrait tablet
@@ -23,6 +23,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --color-blue-dark: #0D6188;
   --color-orange: #FCA93D;
   --color-grey-light: #F9F9F9;
+  --color-grey-light-1: #F0F0F0;
+  --color-grey-light-2: #8E8E94;
+  --color-grey-light-3: #A0A0A0;
   --color-grey-dark: #32323D;
 }
 
@@ -85,6 +88,10 @@ body {
   color: var(--color-red);
 }
 
+.bold {
+  font-weight: 600 !important;
+}
+
 .u-center-text {
   text-align: center !important;
 }
@@ -102,7 +109,7 @@ body {
 }
 
 .u-margin-top-xbig {
-  margin-top: 13rem !important;
+  margin-top: 15rem !important;
 }
 
 .u-margin-top-big {
@@ -153,8 +160,27 @@ body {
   transform-origin: center;
 }
 
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+
 .btn__primary--red {
   background-color: var(--color-red);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.btn__primary--grey {
+  background-color: var(--color-grey-light-2);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.btn__primary--orange {
+  background-color: var(--color-orange);
   color: #fff;
   font-weight: 600;
   border: none;
@@ -222,7 +248,7 @@ body {
 .navigation__button--primary-blue {
   font-size: 1.2rem;
   padding: 0.7rem 2.3rem;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 100px;
   background-color: var(--color-blue);
   color: #fff;
@@ -248,7 +274,7 @@ body {
   background-color: #fff;
   color: var(--color-blue);
   font-size: 1.2rem;
-  font-weight: 900;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
   transition: all 0.2s;
@@ -325,5 +351,249 @@ body {
 
 .section-features .iphone-mockup {
   display: block;
+  max-width: 55rem;
+  max-height: 55rem;
+}
+
+.mobility {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-red);
+  color: #fff;
+  height: 20rem;
+}
+
+.mobility__devices {
+  display: flex;
+}
+
+.mobility__devices--icon {
+  fill: #fff;
+}
+
+.mobility__devices--icon:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.mobility__description {
+  width: 30%;
+  margin-left: 3rem;
+}
+
+.mobility__description--heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.mobility__description--text {
+  font-size: 1.2rem;
+}
+
+.plans .heading-primary {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.plans__heading-secondary {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 6rem;
+  text-align: center;
+  color: #A0A0A0;
+}
+
+.plans__arrow {
+  text-align: center;
+  color: var(--color-blue);
+}
+
+.plans .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.plans .card-container .card {
+  margin-right: 1rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.1rem;
+  align-self: center;
+}
+
+.plans .card-container .card__heading-primary {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0 3rem;
+}
+
+.plans .card-container .card__heading-secondary {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.plans .card-container .card__heading-secondary--light {
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.plans .card-container .card__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.plans .card-container .card__item-icon {
+  margin-top: 0.3rem;
+  margin-left: 2rem;
+  fill: #A0A0A0;
+}
+
+.plans .card-container .card__item-icon--white {
+  fill: #fff;
+}
+
+.plans .card-container .card__item-text {
+  margin-left: 1rem;
+  font-size: 1.35rem;
+  font-weight: 200;
+  color: #A0A0A0;
+}
+
+.plans .card-container .card__item-text--white {
+  color: #fff;
+}
+
+.plans .card-container .card__desc {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.plans .card-container .card__link {
+  display: block;
+  color: var(--color-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.plans .card-container .card__link--white {
+  color: #fff;
+}
+
+.plans .card-container .card--blue {
+  background-color: var(--color-blue);
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.plans__disclaimer {
+  text-align: center;
+  color: var(--color-grey-light-2);
+}
+
+.plans .subplan:not(:last-child) {
+  margin-top: 5rem;
+}
+
+.plans .subplan {
+  background-color: var(--color-grey-light-1);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+}
+
+.plans .subplan__heading {
+  font-size: 2rem;
+}
+
+.plans .subplan__desc {
+  font-size: 1.5rem;
+}
+
+.plans .subplan .btn-parent-bg {
+  background-color: var(--color-grey-ligt-1) !important;
+  padding: 10px 60px !important;
+}
+
+.footer {
+  background-color: var(--color-grey-dark);
+  color: #fff;
+  display: flex;
+}
+
+.footer__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer__right .socials-container {
+  align-self: center;
+  display: flex;
+}
+
+.footer__right .socials {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__right .socials__item {
+  list-style: none;
+}
+
+.footer__right .socials__item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer__right .socials__icon {
+  fill: #A0A0A0;
+}
+
+.footer__navigation-container {
+  display: flex;
+}
+
+.footer__navigation {
+  padding: 7rem 0;
+}
+
+.footer__navigation--heading {
+  width: 15rem;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.footer__navigation--item {
+  list-style: none;
+}
+
+.footer__navigation--item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.footer__navigation--link {
+  text-decoration: none;
+  color: var(--color-grey-light-3);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.clone__disclaimer {
+  font-weight: 700;
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: var(--color-red);
+  color: #fff;
 }
 

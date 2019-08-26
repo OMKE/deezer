@@ -5,7 +5,6 @@
     background-position: top right;
     height: 35rem;
     margin-top: 7rem;
-    
 
     &__title {
         padding-top: 5rem;
@@ -15,7 +14,7 @@
 .section-features {
     background-color: var(--color-grey-light);
     padding-bottom: 10rem;
-    
+
     .heading-primary {
         padding-top: 10rem;
     }
@@ -34,20 +33,17 @@
     .feature {
         display: flex;
         flex-direction: row;
-        
-        
+
         &__icon {
             padding: 2rem 3rem;
             display: inline;
         }
 
         &__heading {
-            
             font-size: 2.2rem;
-            
         }
         &__desc {
-            font-size: 1.8rem; 
+            font-size: 1.8rem;
             font-weight: 300;
             margin-bottom: 4rem;
         }
@@ -55,5 +51,270 @@
 
     .iphone-mockup {
         display: block;
+        max-width: 55rem;
+        max-height: 55rem;
     }
+}
+
+// Section mobilty
+.mobility {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-red);
+    color: #fff;
+    height: 20rem;
+
+    &__devices {
+        display: flex;
+
+        &--icon {
+            fill: #fff;
+        }
+        &--icon:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__description {
+        width: 30%;
+        margin-left: 3rem;
+
+        &--heading {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        &--text {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.plans {
+    
+
+    .heading-primary {
+        text-align: center;
+        margin-top: 10rem;
+    }
+    &__heading-secondary {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-top: 6rem;
+        text-align: center;
+        color: #A0A0A0;
+    }
+    &__arrow {
+        text-align: center;
+        color: var(--color-blue);
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        .card {
+            margin-right: 1rem;
+            box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+            border-radius: .1rem;
+            align-self: center;
+            
+
+            &__heading-primary {
+                margin-top: 3rem;
+                text-align: center;
+                font-size: 2.5rem;
+                padding: 0 3rem;
+            }
+            &__heading-secondary {
+                text-align: center;
+                font-size: 2rem;
+
+                &--light {
+                    font-size: 1.2rem;
+                    font-weight: 200;
+                    text-align: center;
+                }
+            }
+
+            &__item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                &-icon {
+                    margin-top: 0.3rem;
+                    margin-left: 2rem;
+                    fill: #A0A0A0;
+                    
+                    &--white {
+                        fill: #fff;
+                    }
+                }
+
+                &-text {
+                    margin-left: 1rem;
+                    font-size: 1.35rem;
+                    font-weight: 200;
+                    color: #A0A0A0;
+
+                    &--white {
+                        color: #fff;
+                    }
+                }
+            }
+            &__desc {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+            &__link {
+                display: block;
+                color: var(--color-blue);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: 600;
+
+                &--white {
+                    color: #fff;
+                    
+                }
+            }
+
+            &--blue {
+                background-color: var(--color-blue);
+                color: #fff;
+                margin-right: 1rem;
+                
+            }
+
+            
+        }
+    }
+
+    &__disclaimer {
+        text-align: center;
+        color: var(--color-grey-light-2);
+    }
+
+    .subplan:not(:last-child) {
+        margin-top: 5rem;
+    }
+    .subplan {
+        background-color: var(--color-grey-light-1);
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10rem;
+
+        
+        &__heading {
+            font-size: 2rem;
+        }
+        &__desc {
+            font-size: 1.5rem;
+        }
+
+        .btn-parent-bg {
+            background-color: var(--color-grey-ligt-1) !important;
+            padding: 10px 60px !important;
+        }
+    }
+}
+
+
+
+.footer {
+
+    background-color: var(--color-grey-dark);
+    color: #fff;
+
+    display: flex;
+    
+    // flex-direction: row;
+    // justify-content: space-between;
+
+
+    
+
+    &__right {
+        
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        
+
+
+        .socials-container {
+            align-self: center;
+            display: flex;
+        }
+        .socials {
+            // align-self: center;
+            display: flex;
+            flex-direction: row;
+            
+
+            &__item {
+                
+                list-style: none;
+                
+            }
+            &__item:not(:last-child) {
+                margin-right: 2rem;
+            }
+            &__icon {
+                fill: #A0A0A0;
+            }
+        }
+    }
+
+    
+
+    &__navigation-container {
+        display: flex;
+
+    }
+    &__navigation {
+
+        // width: 50%;
+        padding: 7rem 0;
+
+        &--heading {
+            width: 15rem;
+            color: var(--color-blue);
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        &--item {
+            list-style: none;
+        }
+        &--item:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+        &--link {
+            text-decoration: none;
+            color: var(--color-grey-light-3);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+    }
+    
+    
+    
+}
+.clone__disclaimer  {
+    font-weight: 700;
+    text-align: center;
+    padding: .5rem 0;
+    background-color: var(--color-red);
+    color: #fff;
 }
