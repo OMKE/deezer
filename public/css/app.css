@@ -297,7 +297,7 @@ body {
 
 .section-intro {
   color: var(--color-grey-dark);
-  background-image: url(/images/header-cards.png?f557fc2de9ff530e93747b2f24b0c4ed);
+  background-image: url("/img/header-cards.png");
   background-repeat: no-repeat;
   background-position: top right;
   height: 35rem;
