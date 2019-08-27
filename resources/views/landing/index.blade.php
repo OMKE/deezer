@@ -5,11 +5,13 @@
     <section class="section-intro">
         <div class="u-margin-left-big">
             <h1 class="heading-primary section-intro__title">You bring the passion. <br>We bring the music.</h1>
-            <h2 class="heading-secondary">
+            <h2 class="heading-secondary section-intro__subtitle">
                 <span class="heading-secondary--red">Try Deezer Premium free for 30 days*</span>
             </h2>
-            <a href="/premium" class="btn btn__primary--red u-margin-top-medium u-margin-right-small">Deezer Premium</a>
-            <a href="/register" class="btn btn__secondary--dark">Deezer Free</a>
+            <div class="buttons">
+                <a href="/premium" class="btn btn__primary--red u-margin-top-medium u-margin-right-small">Deezer Premium</a>
+                <a href="/register" class="btn btn__secondary--dark">Deezer Free</a>
+            </div>
         </div>
         
     </section>
@@ -187,7 +189,7 @@
                 </div>
             </div>
 
-            <div class="card--blue">
+            <div class="card card--blue">
                 <h1 class="card__heading-primary">Deezer Premium</h1>
                 <h1 class="card__heading-secondary">6,99€</h1>
                 <h2 class="card__heading-secondary--light">/month</h2>
@@ -276,25 +278,31 @@
 
         <p class="plans__disclaimer u-margin-top-big">Deezer Premium, 30 days free: cannot be comined with any other offer. Valid one time only for 30 days. This offer is non-binding. You may cancel your subsription at any time.</p>
 
-        <div class="subplan">
-            <div class="subplan__text u-margin-left-big">
-                <h2 class="subplan__heading">Annual Plan</h2>
-                <p class="subplan__desc">Get a year of Deezer Premium for 69,90 € instead of 83,88 €</p>
+        <div class="subplans">
+            <div class="subplan">
+                <div class="subplan__text u-margin-left-big">
+                    <h2 class="subplan__heading">Annual Plan</h2>
+                    <p class="subplan__desc">Get a year of Deezer Premium for 69,90 € instead of 83,88 €</p>
+                </div>
+                
+                
+                <div class="btn-center">
+                    <a href="/subplan" class="btn btn__secondary--dark u-marign-right-big btn-parent-bg">Subscribe</a>
+                </div>
+                
             </div>
-            
-            
-            <a href="/subplan" class="btn btn__secondary--dark u-marign-right-big btn-parent-bg">Subscribe</a>
-            
-        </div>
-        <div class="subplan">
-            <div class="subplan__text u-margin-left-big">
-                <h2 class="subplan__heading">Deezer HiFi</h2>
-                <p class="subplan__desc">Stream in lossless quality for 13,99 €/month</p>
+            <div class="subplan">
+                <div class="subplan__text u-margin-left-big">
+                    <h2 class="subplan__heading">Deezer HiFi</h2>
+                    <p class="subplan__desc">Stream in lossless quality for 13,99 €/month</p>
+                </div>
+                
+                
+                <div class="btn-center">
+                    <a href="/subplan" class="btn btn__secondary--dark u-marign-right-big btn-parent-bg">Learn more</a>
+                </div>
+                
             </div>
-            
-            
-            <a href="/subplan" class="btn btn__secondary--dark u-marign-right-big btn-parent-bg">Learn more</a>
-            
         </div>
     </section>
 
@@ -318,6 +326,43 @@
             </ul>
             
         </div>
+
+        <div class="collapsible-navigation">
+            <button class="collapsible-navigation__button">Deezer</button>
+            
+            <div class="collapsible-navigation__content">
+                <li class="footer__navigation--item"><a href="/plans" class="footer__navigation--link">Plans</a></li>
+                <li class="footer__navigation--item"><a href="/features" class="footer__navigation--link">Features</a></li>
+                <li class="footer__navigation--item"><a href="/devices" class="footer__navigation--link">Devices</a></li>
+                <li class="footer__navigation--item"><a href="/help" class="footer__navigation--link">Help</a></li>
+                <li class="footer__navigation--item"><a href="/aboutus" class="footer__navigation--link">About Us</a></li>
+                <li class="footer__navigation--item"><a href="/careers" class="footer__navigation--link">Careers</a></li> 
+            </div>
+            <button class="collapsible-navigation__button">Explore</button>
+            <div class="collapsible-navigation__content">
+                <li class="footer__navigation--item"><a href="/plans" class="footer__navigation--link">Plans</a></li>
+                <li class="footer__navigation--item"><a href="/features" class="footer__navigation--link">Features</a></li>
+                <li class="footer__navigation--item"><a href="/devices" class="footer__navigation--link">Devices</a></li>
+                <li class="footer__navigation--item"><a href="/help" class="footer__navigation--link">Help</a></li>
+                <li class="footer__navigation--item"><a href="/aboutus" class="footer__navigation--link">About Us</a></li>
+                <li class="footer__navigation--item"><a href="/careers" class="footer__navigation--link">Careers</a></li>
+            </div>
+            <button class="collapsible-navigation__button">Who are we?</button>
+            <div class="collapsible-navigation__content">
+                <li class="footer__navigation--item"><a href="/creators" class="footer__navigation--link">Labels & artists</a></li>
+                <li class="footer__navigation--item"><a href="/developers" class="footer__navigation--link">Developers</a></li>
+                <li class="footer__navigation--item"><a href="/press" class="footer__navigation--link">Press</a></li>
+            </div>
+            <button class="collapsible-navigation__button">Legal</button>
+            <div class="collapsible-navigation__content">
+                <li class="footer__navigation--item"><a href="/creators" class="footer__navigation--link">Terms and Conditions of Use</a></li>
+                <li class="footer__navigation--item"><a href="/developers" class="footer__navigation--link">Personal data and cookies</a></li>
+                <li class="footer__navigation--item"><a href="/press" class="footer__navigation--link">Contact: omaririskic.dev@gmail.com</a></li>
+                <li class="footer__navigation--item"><a href="/press" class="footer__navigation--link">Legal information</a></li>
+                <li class="footer__navigation--item"><a href="/press" class="footer__navigation--link">Privacy settings</a></li> 
+            </div>
+        </div>
+
         <!-- TODO naming BEM convention -->
         <div class="footer__navigation-container">
             <ul class="footer__navigation">
@@ -357,7 +402,23 @@
     
     <p class="clone__disclaimer">This is not a real Deezer website, it's just a clone made for learning purposes !!!</p>
     
-
+    <script>
+        let coll = document.getElementsByClassName('collapsible-navigation__button');
+        
+        for(let i = 0; i < coll.length; i++){
+            coll[i].addEventListener('click', function() {
+                this.classList.toggle('active');
+                let content = this.nextElementSibling;
+                
+                if(content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            });
+        }
+    
+    </script>
 
 
 
