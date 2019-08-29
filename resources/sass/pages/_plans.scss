@@ -1,0 +1,53 @@
+.section-plans-header {
+    height: 38rem;
+    background-image: url("/img/girl.jpg");
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .heading-secondary {
+        color: #fff;
+        
+        @include break(phone) {
+            width: 80%;
+            word-wrap: initial;
+            text-align: center;
+        }
+    }
+    @include break(phone) {
+        background-position: 40% 0;
+    }
+}
+
+.plans {
+    @include break(tab-port) {
+        margin-top: 3rem;
+    }
+}
+
+.section-gift-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+        align-self: center;
+    }
+
+    @include break(phone) {
+        
+        .heading-secondary {
+            font-size: 2.2rem;
+        }
+        .heading-tertiary {
+            font-size: 1.3rem;
+        }
+        
+    }
+}

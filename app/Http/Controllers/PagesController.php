@@ -10,4 +10,8 @@ class PagesController extends Controller
     {
         return view('landing.index');
     }
+    public function plans()
+    {
+        return view('landing.plans');
+    }
 }
