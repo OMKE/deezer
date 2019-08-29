@@ -1,5 +1,5 @@
 <header class="header">
-    <a href="/"><img src="img/logo.png" alt="Deezer logo" class="logo"></a>
+    <a href="/" class="header__link"><img src="img/logo.png" alt="Deezer logo" class="logo"></a>
     <div class="navigation">
         <input type="checkbox" id="nav-toggle" class="navigation__checkbox">
         <label for="nav-toggle" class="navigation__button">

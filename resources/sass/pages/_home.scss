@@ -10,14 +10,31 @@
         padding-top: 5rem;
     }
 
+    @include break(phone) {
+        .heading-primary {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+        .heading-secondary {
+            font-size: 2rem;
+        }
+    }
+
     @include break(tab-port) {
         height: 50rem;
 
         background-position: 100% -800%;
 
-        // &__title {
+        .buttons {
+            display: flex;
+            flex-direction: column;
 
-        // }
+            .btn {
+                width: 80%;
+                margin: 2rem 0 0 0 !important;
+                text-align: center;
+            }
+        }
     }
     @include break(tab-land) {
         height: 55rem;
@@ -47,7 +64,7 @@
         & > div > div > .btn {
             margin-top: 2.5rem !important;
             align-self: center;
-            
+
             margin-bottom: 2.5rem;
         }
     }
@@ -56,6 +73,8 @@
 .section-features {
     background-color: var(--color-grey-light);
     padding-bottom: 10rem;
+
+    
 
     .heading-primary {
         padding-top: 10rem;
@@ -108,6 +127,37 @@
             display: none;
         }
     }
+
+    @include break(phone) {
+        padding-bottom: 2rem;
+
+        .heading-primary {
+            padding-top: 0 !important;
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 1rem auto !important;
+        }
+        
+        .feature {
+            &__icon {
+                display: none;
+            }
+
+            &__heading {
+                margin-left: 1rem;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            &__desc {
+                font-size: 1.5rem;
+                margin-left: 1rem;
+                font-weight: 300;
+                
+            }
+            
+        }
+        
+    }
 }
 
 // Section mobilty
@@ -122,6 +172,8 @@
     @include break(tab-port) {
         flex-direction: column;
     }
+
+    
 
     &__devices {
         display: flex;
@@ -157,6 +209,20 @@
             @include break(tab-port) {
                 margin-bottom: 2rem;
             }
+        }
+    }
+
+    @include break(phone) {
+        height: 25rem;
+        &__description {
+            order: 0;
+            margin: 0;
+            text-align: center;
+            
+        }
+        &__devices {
+            order: 1;
+            
         }
     }
 }
@@ -257,10 +323,15 @@
             &__desc {
                 text-align: center;
                 font-size: 1.5rem;
-            }
 
+                @include break(phone) {
+                    margin-top: 2rem !important;
+                }
+            }
+            .btn-center {
+                margin: 1rem !important;
+            }
             &__link {
-                display: block;
                 color: var(--color-blue);
                 display: flex;
                 justify-content: center;
@@ -272,7 +343,10 @@
 
                 &--white {
                     color: #fff;
+                    padding-bottom: 0 !important;
                 }
+
+                
             }
 
             &--blue {
@@ -290,6 +364,11 @@
     &__disclaimer {
         text-align: center;
         color: var(--color-grey-light-2);
+
+
+        @include break(phone) {
+            margin-top: 3rem !important;
+        }
     }
 
     .subplan:not(:last-child) {
@@ -303,6 +382,8 @@
         align-items: center;
         height: 10rem;
 
+        
+
         &__text {
             @include break(tab-land) {
                 margin: 0 auto !important;
@@ -314,6 +395,10 @@
             justify-content: center;
             height: 15rem;
             // margin: 0 auto !important;
+        }
+
+        @include break(phone) {
+            height: 13rem;
         }
 
         &__heading {
@@ -330,6 +415,10 @@
                 text-align: center;
                 margin: 1rem auto !important;
             }
+
+            @include break(phone) {
+                display: none;
+            }
         }
 
         .btn-parent-bg {
@@ -338,6 +427,9 @@
 
             @include break(tab-land) {
                 margin: 0 !important;
+            }
+            @include break(phone) {
+                margin-top: 2rem !important;
             }
         }
     }
@@ -392,12 +484,26 @@
 
             &__item {
                 list-style: none;
+                border: .2rem solid #a0a0a0;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 3rem;
+                width: 3rem;
+                
             }
             &__item:not(:last-child) {
                 margin-right: 2rem;
             }
+            &__link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             &__icon {
                 fill: #a0a0a0;
+                
             }
         }
     }
@@ -439,7 +545,7 @@
         margin-top: 3rem;
         display: none;
         // Show only on tablet portrait and phone
-        @include break(tab-port)  {
+        @include break(tab-port) {
             display: flex;
         }
         justify-content: center;
@@ -461,14 +567,14 @@
             text-transform: uppercase;
             outline: none;
         }
-        
+
         &__content {
             margin-left: 3.7rem;
-            
+
             display: none;
             padding-bottom: 2rem;
             font-size: 1.2rem;
-            
+
             flex-direction: column;
             align-self: flex-start;
 
