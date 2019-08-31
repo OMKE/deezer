@@ -20,9 +20,16 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+
+
+    // Development tool
+    // background: #000;
+    // color: #0f0 !important;
+    // outline: solid;
 }
 
 html {
+    
     font-size: 62.5%; // 1rem = 10px  - 10px/16px(browser default) = 62.5%;
 
 
@@ -48,4 +55,10 @@ html {
 body {
     box-sizing: border-box;
     color: var(--color-grey-dark);
+    touch-action: manipulation;
+    overflow-x: hidden;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }

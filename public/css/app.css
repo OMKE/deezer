@@ -63,6 +63,10 @@ html {
 body {
   box-sizing: border-box;
   color: var(--color-grey-dark);
+  touch-action: manipulation;
+  overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -165,6 +169,10 @@ body {
   margin-right: 1.5rem !important;
 }
 
+.u-flex-container {
+  display: flex;
+}
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -212,10 +220,9 @@ body {
 
 .header {
   display: flex;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  right: 0;
-  left: 0;
   font-size: 1.7rem;
   height: 7rem;
   justify-content: space-between;
@@ -223,6 +230,7 @@ body {
   border-bottom: 3px solid var(--color-grey-light);
   background-color: #fff;
   opacity: 0.98;
+  z-index: 1000;
 }
 
 .header__link {
@@ -275,6 +283,7 @@ body {
     right: 3rem;
     margin: 0 auto !important;
     z-index: 2000;
+    outline: none;
   }
 
   .navigation__icon {
@@ -672,6 +681,15 @@ body {
 
   .mobility__devices {
     order: 1;
+    width: 94%;
+  }
+
+  .mobility__devices--icon:first-child {
+    overflow: hidden;
+  }
+
+  .mobility__devices--icon:last-child {
+    overflow: hidden;
   }
 }
 
@@ -735,6 +753,13 @@ body {
   .plans .card-container .card {
     width: 50%;
     margin-bottom: 2rem;
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .plans .card-container .card {
+    width: 80%;
   }
 }
 
@@ -823,6 +848,12 @@ body {
 @media only screen and (max-width: 56.25em) {
   .plans .card-container .card--blue {
     width: 60%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .plans .card-container .card--blue {
+    width: 85%;
   }
 }
 
@@ -1132,6 +1163,147 @@ body {
 
   .section-gift-card .heading-tertiary {
     font-size: 1.3rem;
+  }
+}
+
+.section-login {
+  margin-top: 7rem;
+  height: 91vh;
+  flex: 1 0 60%;
+  background-color: var(--color-grey-light-1);
+}
+
+.section-login .login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: inherit;
+}
+
+.section-login .login-container .heading-secondary {
+  font-size: 3rem;
+  text-align: center;
+  word-wrap: initial;
+}
+
+@media only screen and (max-width: 75em) {
+  .section-login .login-container .heading-secondary {
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-login .login-container__o-auth-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.section-login .login-container .o-auth-btn {
+  padding: 10px 30px;
+  position: relative;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  width: 13rem;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.section-login .login-container .o-auth-btn__icon {
+  position: absolute;
+  top: 0.7rem;
+  left: 1rem;
+}
+
+.section-login .login-container .o-auth-btn__text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.section-login .login-container .o-auth-btn--facebook {
+  background-color: #0056B1;
+  color: #fff;
+  fill: #fff;
+}
+
+.section-login .login-container .o-auth-btn--google {
+  color: #757575;
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-login .login-container .o-auth-btn--google {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+.section-login .login-container .o-auth-btn:focus {
+  outline: none;
+}
+
+.section-login .login-container .o-auth-btn:hover {
+  cursor: pointer;
+}
+
+.section-login .login-container__inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-login .login-container__input {
+  font-family: inherit;
+  font-size: inherit;
+  height: 4rem;
+  width: 33rem;
+  border: none;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.section-login .login-container__input:focus {
+  outline: none;
+}
+
+.section-login .login-container__input::-webkit-input-placeholder {
+  color: var(--color-grey-light-2);
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.section-login .login-container__btn-link {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.section-login .login-container__not-registered {
+  font-size: 1.1rem;
+}
+
+.section-login .login-container__not-registered--bold {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.img-right {
+  height: 91vh;
+  margin-top: 7rem;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .img-right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .img-right {
+    width: 30%;
   }
 }
 

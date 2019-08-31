@@ -92,7 +92,7 @@
 
     </footer>
     
-    <p class="clone__disclaimer">This is not a real Deezer website, it's just a clone made for learning purposes !!!</p>
+    <p class="clone__disclaimer">This is not a real Deezer website, it's made for learning purposes ONLY !!!</p>
     
     <script>
         let coll = document.getElementsByClassName('collapsible-navigation__button');

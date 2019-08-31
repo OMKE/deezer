@@ -184,6 +184,7 @@
 
         &--icon {
             fill: #fff;
+            
         }
         &--icon:not(:last-child) {
             margin-right: 2rem;
@@ -222,6 +223,14 @@
         }
         &__devices {
             order: 1;
+            width: 94%;
+            
+            &--icon:first-child {
+                overflow: hidden;
+            }
+            &--icon:last-child {
+                overflow: hidden;
+            }
             
         }
     }
@@ -275,6 +284,10 @@
             @include break(tab-port) {
                 width: 50%;
                 margin-bottom: 2rem;
+                margin-right: 0 !important;
+            }
+            @include break(phone){
+                width: 80%;
             }
 
             &__heading-primary {
@@ -356,6 +369,9 @@
 
                 @include break(tab-port) {
                     width: 60%;
+                }
+                @include break(phone) {
+                    width: 85%;
                 }
             }
         }

@@ -1,0 +1,147 @@
+.section-login {
+    margin-top: 7rem;
+    height: 91vh;
+    // display: inline-block;
+    // width: 60%;
+    flex: 1 0 60%;
+    background-color: var(--color-grey-light-1);
+
+
+    
+
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: inherit;
+
+        .heading-secondary {
+            font-size: 3rem;
+            
+            text-align: center;
+            word-wrap: initial;
+
+            @include break(tab-land) {
+                font-size: 2.3rem;
+            }
+        }
+        
+
+        &__o-auth-buttons {
+            
+            @include break(phone) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .o-auth-btn {
+            padding: 10px 30px;            
+            position: relative;
+            border-radius: 8px;
+            border: none;
+            text-align: center;
+            width: 13rem;
+            overflow: hidden;
+            z-index: 3;
+
+
+            &__icon {
+                position: absolute;
+                top: .7rem;
+                left: 1rem;
+                
+            }
+            &__text {
+                font-size: 1.2rem;
+                font-weight: 500;
+                
+                
+            }
+
+            &--facebook {
+                background-color: #0056B1;
+                color: #fff;
+                fill: #fff;
+                
+
+            }
+
+            &--google {
+                color: #757575;
+                margin-left: 2rem;
+
+                @include break(phone) {
+                    margin-left: 0;
+                    margin-top: 1rem;
+                }
+            }
+
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+
+        &__inputs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__input {
+            font-family: inherit;
+            font-size: inherit;
+            height: 4rem;
+            width: 33rem;
+            border: none;
+            position: relative;
+            padding-left: 2rem;
+
+            &:focus {
+                outline: none;
+            }
+
+
+            &::-webkit-input-placeholder {
+               color: var(--color-grey-light-2);
+               font-size: 1.2rem;
+               opacity: .9;
+            }
+
+        }
+        &__btn-link {
+            font-weight: 600;
+            color: #000;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        &__not-registered {
+            font-size: 1.1rem;
+
+            &--bold {
+                font-weight: 600;
+                text-decoration: none;
+                color: #000;
+            }
+        }
+
+    }
+}
+
+
+.img-right {
+    height: 91vh;
+    margin-top: 7rem;
+    display: inline-block;
+    
+
+    @include break(tab-port){
+        display: none;
+    }
+    @include break(tab-land){
+        width: 30%;
+    }
+}
