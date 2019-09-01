@@ -22,15 +22,22 @@
                             <span class="o-auth-btn__text">Google</span>
                         </button>
                     </div>
+                    <!-- Login form -->
+                    <form action="{{ route('login') }}" method="post">
+                        @csrf
 
-                    <div class="login-container__inputs u-margin-top-medium">
-                        <input class="login-container__input u-margin-bottom-small" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus id="email" placeholder="Email address">
+                        <div class="login-container__inputs u-margin-top-medium">
 
-                        <input class="login-container__input" type="password" name="password" id="password" required autocomplete="current-password" placeholder="Password">
-                    </div>
+                            <!-- Make red outline when user writes invalid email -->
+                            <input class="login-container__input u-margin-bottom-small" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus id="email" placeholder="Email address">
 
-                    <button type="submit" class="btn btn__primary--red u-margin-top-small">Log in</button>
+                            <input class="login-container__input" type="password" name="password" id="password" required autocomplete="current-password" placeholder="Password">
+                        </div>
 
+                        <div class="btn-center">
+                            <button type="submit" class="btn btn__primary--red u-margin-top-small">Log in</button>
+                        </div>
+                    </form>
                     <!-- @if (Route::has('password.request')) -->
                         <a href="{{ route('password.request') }}" class="login-container__btn-link u-margin-top-small">
                             {{ __('Forgotten your password?') }}

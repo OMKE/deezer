@@ -13,7 +13,12 @@
         font-size: 1.2rem;
         transform-origin: center;
     }
-
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        cursor: pointer;
+    }
     &-center {
         display: flex;
         justify-content: center;
