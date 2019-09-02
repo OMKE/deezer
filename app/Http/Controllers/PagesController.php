@@ -14,4 +14,8 @@ class PagesController extends Controller
     {
         return view('landing.plans');
     }
+    public function download()
+    {
+        return view('landing.download');
+    }
 }

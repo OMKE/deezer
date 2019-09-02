@@ -5,15 +5,15 @@
     @include('includes.navbar')
 
     <section class="section-intro">
-        <div class="u-margin-left-big">
-            <h1 class="heading-primary section-intro__title">You bring the passion. <br>We bring the music.</h1>
-            <h2 class="heading-secondary section-intro__subtitle">
-                <span class="heading-secondary--red">Try Deezer Premium free for 30 days*</span>
-            </h2>
-            <div class="buttons">
-                <a href="/premium" class="btn btn__primary--red u-margin-top-medium u-margin-right-small">Deezer Premium</a>
-                <a href="/register" class="btn btn__secondary--dark">Deezer Free</a>
-            </div>
+        <div class="u-content">
+                <h1 class="heading-primary section-intro__title">You bring the passion. <br>We bring the music.</h1>
+                <h2 class="heading-secondary section-intro__subtitle">
+                    <span class="heading-secondary--red">Try Deezer Premium free for 30 days*</span>
+                </h2>
+                <div class="buttons">
+                    <a href="/premium" class="btn btn__primary--red u-margin-top-medium u-margin-right-small">Deezer Premium</a>
+                    <a href="/register" class="btn btn__secondary--dark">Deezer Free</a>
+                </div>            
         </div>
         
     </section>
@@ -282,28 +282,23 @@
 
         <div class="subplans">
             <div class="subplan">
-                <div class="subplan__text u-margin-left-big">
-                    <h2 class="subplan__heading">Annual Plan</h2>
-                    <p class="subplan__desc">Get a year of Deezer Premium for 69,90 € instead of 83,88 €</p>
-                </div>
-                
-                
-                <div class="btn-center">
-                    <a href="/subplan" class="btn btn__secondary--dark u-marign-right-big btn-parent-bg">Subscribe</a>
+                <div class="u-flex-container u-flex-center u-width-max">
+                    <div class="subplan__text">
+                        <h2 class="subplan__heading">Annual Plan</h2>
+                        <p class="subplan__desc">Get a year of Deezer Premium for 69,90 € instead of 83,88 €</p>
+                    </div>
+                    <a href="/subplan" class="btn btn__secondary--dark btn-parent-bg">Subscribe</a>    
                 </div>
                 
             </div>
             <div class="subplan">
-                <div class="subplan__text u-margin-left-big">
-                    <h2 class="subplan__heading">Deezer HiFi</h2>
-                    <p class="subplan__desc">Stream in lossless quality for 13,99 €/month</p>
+                <div class="u-flex-container u-flex-center u-width-max">
+                    <div class="subplan__text">
+                        <h2 class="subplan__heading">Deezer HiFi</h2>
+                        <p class="subplan__desc">Stream in lossless quality for 13,99 €/month</p>
+                    </div>
+                    <a href="/subplan" class="btn btn__secondary--dark btn-parent-bg">Learn more</a>
                 </div>
-                
-                
-                <div class="btn-center">
-                    <a href="/subplan" class="btn btn__secondary--dark u-marign-right-big btn-parent-bg">Learn more</a>
-                </div>
-                
             </div>
         </div>
     </section>

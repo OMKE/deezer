@@ -13,6 +13,7 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('/plans', 'PagesController@plans');
+Route::get('/download', 'PagesController@download');
 
 Auth::routes();
 

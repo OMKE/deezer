@@ -1,0 +1,99 @@
+.card {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.1rem;
+    align-self: center;
+
+    @include break(tab-port) {
+        width: 50%;
+        margin-bottom: 2rem;
+        margin-right: 0 !important;
+    }
+    @include break(phone){
+        width: 80%;
+    }
+
+    &__heading-primary {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 0 3rem;
+    }
+    &__heading-secondary {
+        text-align: center;
+        font-size: 2rem;
+
+        &--light {
+            font-size: 1.2rem;
+            font-weight: 200;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &-icon {
+            margin-top: 0.3rem;
+            margin-left: 2rem;
+            fill: #a0a0a0;
+
+            &--white {
+                fill: #fff;
+            }
+        }
+
+        &-text {
+            margin-left: 1rem;
+            font-size: 1.35rem;
+            font-weight: 200;
+            color: #a0a0a0;
+
+            &--white {
+                color: #fff;
+            }
+        }
+    }
+    &__desc {
+        text-align: center;
+        font-size: 1.5rem;
+
+        @include break(phone) {
+            margin-top: 2rem !important;
+        }
+    }
+    .btn-center {
+        margin: 1rem !important;
+    }
+    &__link {
+        color: var(--color-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding-bottom: 2rem;
+
+        &--white {
+            color: #fff;
+            padding-bottom: 0 !important;
+        }
+
+        
+    }
+
+    &--blue {
+        background-color: var(--color-blue);
+        color: #fff;
+        margin-right: 1rem;
+
+        @include break(tab-port) {
+            width: 60%;
+        }
+        @include break(phone) {
+            width: 85%;
+        }
+    }
+}

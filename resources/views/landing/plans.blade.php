@@ -170,28 +170,23 @@
 
         <div class="subplans">
             <div class="subplan">
-                <div class="subplan__text u-margin-left-big">
-                    <h2 class="subplan__heading">Annual Plan</h2>
-                    <p class="subplan__desc">Get a year of Deezer Premium for 69,90 € instead of 83,88 €</p>
-                </div>
-                
-                
-                <div class="btn-center">
-                    <a href="/subplan" class="btn btn__secondary--dark u-marign-right-big btn-parent-bg">Subscribe</a>
+                <div class="u-flex-container u-flex-center u-width-max">
+                    <div class="subplan__text">
+                        <h2 class="subplan__heading">Annual Plan</h2>
+                        <p class="subplan__desc">Get a year of Deezer Premium for 69,90 € instead of 83,88 €</p>
+                    </div>
+                    <a href="/subplan" class="btn btn__secondary--dark btn-parent-bg">Subscribe</a>    
                 </div>
                 
             </div>
             <div class="subplan">
-                <div class="subplan__text u-margin-left-big">
-                    <h2 class="subplan__heading">Deezer HiFi</h2>
-                    <p class="subplan__desc">Stream in lossless quality for 13,99 €/month</p>
+                <div class="u-flex-container u-flex-center u-width-max">
+                    <div class="subplan__text">
+                        <h2 class="subplan__heading">Deezer HiFi</h2>
+                        <p class="subplan__desc">Stream in lossless quality for 13,99 €/month</p>
+                    </div>
+                    <a href="/subplan" class="btn btn__secondary--dark btn-parent-bg">Learn more</a>
                 </div>
-                
-                
-                <div class="btn-center">
-                    <a href="/subplan" class="btn btn__secondary--dark u-marign-right-big btn-parent-bg">Learn more</a>
-                </div>
-                
             </div>
         </div>
     </section>
