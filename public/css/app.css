@@ -200,6 +200,10 @@ body {
   }
 }
 
+.is-invalid {
+  border: 1px solid red !important;
+}
+
 .btn,
 .btn:link,
 .btn:visited {

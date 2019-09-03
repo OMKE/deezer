@@ -24,9 +24,10 @@
                     </div>
 
                     <!-- Register form -->
-                    <form action="{{ route('register') }}" method="post">
+                    <form action="{{ route('register') }}" method="POST">
+                        @csrf
                         <div class="register-container__inputs u-margin-top-medium">
-                            <input class="register-container__input u-margin-bottom-small" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus id="email" placeholder="Email address">
+                            <input class="register-container__input u-margin-bottom-small @error('name') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus id="email" placeholder="Email address">
                             <input class="register-container__input u-margin-bottom-small" type="text" name="username" id="username" required placeholder="Username">
                             <input class="register-container__input" type="password" name="password" id="password" required autocomplete="current-password" placeholder="Password">
                             <div class="register-container__selects-container u-margin-top-small">
@@ -55,8 +56,13 @@
                     <p class="register-container__accept-terms u-margin-top-small">By clicking on "Sign up", you accept the <br><a href="/legal/tac" class="register-container__btn-link"> Terms and Conditions of Use</a></p>
                     
                 </div>
-                
-                
+                @if(count($errors) > 0)
+                    @foreach($errors->all() as $error)
+                    <div class="u-center-text">
+                        <strong>{{ $error }}</strong>
+                    @endforeach
+                    </div>
+                @endif
             </div>
             <div class="img-right">
                 <img src="img/signup_girl.jpg" alt="Login img">
